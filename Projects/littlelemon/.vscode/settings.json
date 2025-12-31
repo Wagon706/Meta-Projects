@@ -1,0 +1,13 @@
+{
+  "sqltools.connections": [
+    {
+        "name": "littlelemon (root)",
+        "driver": "MySQL",
+        "server": "127.0.0.1",
+        "port": 3306,
+        "database": "littlelemon",
+        "username": "root",
+        "password": "Reset2025_Aa#1"
+    }
+]
+}
