@@ -1,0 +1,456 @@
+/*************************************INDEX.HTML****************************************/
+
+
+
+/*FONTS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+
+
+/*MISC*/
+
+    nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20vh;
+    height: auto;
+    padding: 12px 24px;
+    width: min(700px, 90%);
+    background-color: #003049;
+    border-radius: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-link, li {
+    position: relative;
+    list-style: none;
+    display: inline;
+    color: #a3b18a;
+    font-family: "Montserrat", sans-serif;
+    margin: 2vh;
+    right: 1.5vh;
+
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+hr {
+    margin-top: 12vh;
+    width: 50vh;
+    
+    
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    }
+
+
+
+/*IMAGES*/
+
+.logo-container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    top: 5vh;
+}
+
+.garden-img {
+    margin-top: 10vh;
+    margin-left: 45vh;
+    height: 50vh;
+    width: 80vh;
+    border-radius: 5px;
+    box-shadow: 0 0 0 3px #003049; 
+    z-index: 0;
+}
+
+.column > img {
+    height: 20vh;
+    width: 30vh;
+    margin-top: 4vh;
+    border-radius: 20px;
+}
+
+
+.logo-2 {
+    height: 18vh;
+    width: 10vh;
+}
+
+.blob {
+
+    position: relative;
+    left: 10vh;
+    height: 35vh;
+    width: 35vh;
+}
+
+/*LAYOUT*/
+
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: #fdf0d5;
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+    overflow-x: hidden;
+}
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4vh 0 3vh;
+    gap: 1vh;
+}
+
+
+section {
+    display: flex;
+}
+
+article {
+    flex: 1;
+}
+
+header > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.full-column, .garden-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4vh; 
+    margin-top: 5vh;
+    flex-wrap: wrap; 
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #003049;
+    margin-top: 10vh;
+    min-height: 420px;
+    height: auto;
+    width: 35vh;
+    border-radius: 10px;
+    padding: 2vh;
+    box-sizing: border-box;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/*TEXT*/
+
+.card-header {
+    position: relative;
+    text-align: center;
+    top: 2vh;
+    color: #a3b18a;
+    font-family: "Oswald", sans-serif;
+}
+
+
+.card-text {
+    margin-top: 5vh;
+    text-align: center;
+    color: white;
+    font-family:"Montserrat", sans-serif;
+    font-size: 15px;
+}
+
+
+.column > ul {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 1px;
+    gap: 15px;
+}
+
+.card-contact {
+    color: white;
+    font-style: italic;
+    text-decoration: underline;
+    
+}
+
+.card-contact:hover {
+    color: #a3b18a;
+}
+
+.copyright {
+    font-family: "Montserrat", sans-serif;
+    color: #003049;
+    font-size: 13px;
+    margin: 0;
+}
+
+label {
+    display: inline-block;  
+    white-space: nowrap;
+    position: relative;
+    right: 15vh; 
+    top: 1.5vh;
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    z-index: 1;
+
+}
+
+/*MEDIA QUERIES*/
+
+
+
+/*mobile*/
+
+@media screen and (max-width: 480px) {
+
+
+    nav {
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+        margin-top: 5vh;
+        padding: 1vh;
+    }
+
+
+
+    .nav-link {
+        display: block;
+        margin: 1vh 0;
+        right: 0;
+        text-align: center;
+    }
+
+    .garden-img {
+        width: 90%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5vh;
+    }
+
+    .blob {
+        display: none;
+    }
+
+    label {
+        display: none;
+    }
+
+    .card-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 4vh;
+    }
+
+    .column {
+        width: 90%;
+        height: auto;
+    }
+
+    .logo-container {
+        top: 2vh;
+    }
+
+    hr {
+        width: 80%;
+    }
+    
+}
+
+
+/*tablet*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    nav {
+        width: 90%;
+        flex-wrap: wrap;
+        height: auto;
+        padding: 1vh;
+    }
+
+    .nav-link {
+        margin: 1vh;
+    }
+
+    .garden-img {
+        width: 80%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card-row {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3vh;
+    }
+
+    .column {
+        width: 40vh;
+        height: auto;
+    }
+
+    
+}
+
+
+/*************************************PAGE SECTIONS****************************************/
+
+.page-hero {
+    text-align: center;
+    padding: 8vh 5%;
+}
+
+.page-title {
+    font-family: "Oswald", sans-serif;
+    font-size: clamp(28px, 5vw, 52px);
+    color: #003049;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.page-subtitle {
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(14px, 2vw, 17px);
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+
+/*************************************CONTACT FORM****************************************/
+
+.contact-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 2vh;
+    box-sizing: border-box;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    background-color: #fdf0d5;
+    color: #003049;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    box-shadow: 0 0 0 2px #a3b18a;
+}
+
+.contact-form textarea {
+    height: 90px;
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #a3b18a;
+    color: #003049;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-family: "Oswald", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: background-color 0.2s;
+}
+
+.contact-form button:hover {
+    background-color: #fdf0d5;
+}
+
+
+
+/*desktop and laptop*/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .card-row {
+        gap: 2vh;
+    }
+
+    .column {
+        width: 28vh;
+        height: auto;
+    }
+
+    .garden-img {
+        width: 85%;
+        height: auto;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
